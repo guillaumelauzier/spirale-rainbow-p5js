@@ -1,1 +1,7 @@
 # spirale-rainbow-p5js
+
+In this example, the drawSpiral function is used to recursively draw a rainbow spiral on the canvas using the p5.js rect function. The drawSpiral function takes five arguments: the x and y coordinates of the starting point for the spiral, the s size of the spiral, the n number of points in the spiral, and the i increment of the spiral. The function first sets the fill color for the current iteration of the spiral using the value of n, and then calculates the size of the current iteration of the spiral. Next, the function uses the rect function to draw the current iteration of the spiral.
+
+Finally, the function checks if the number of points in the current iteration of the spiral is greater than zero, and if so, it recursively calls itself to draw the next iteration of the spiral in a position that is r units to the right of the current iteration, with a size that is i units smaller than the current iteration. This recursive process continues until the number of points in the spiral becomes zero, at which point the function returns and no further iterations are drawn.
+
+You can adjust the starting point and size of the spiral, the number of points and increment of the spiral, and the colors used for the spiral by modifying the corresponding variables at the top of the code. You can also change the shape used to draw the spiral by replacing the rect function with another p5.js shape function, such as ellipse or triangle.
